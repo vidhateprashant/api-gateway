@@ -20,6 +20,7 @@ public class CorsConfig {
 	public CorsConfigurationSource corsConfigurationSource() {
 		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration().applyPermitDefaultValues();
+//		config.addAllowedMethod("*");
 		config.addAllowedMethod(HttpMethod.PUT);
 		config.addAllowedMethod(HttpMethod.DELETE);
 		config.addAllowedMethod(HttpMethod.GET);
@@ -27,6 +28,7 @@ public class CorsConfig {
 		config.addAllowedMethod(HttpMethod.POST);
 		config.addAllowedHeader("*");
 		config.addAllowedOrigin("*");
+		config.setMaxAge(99999L);
 
 		source.registerCorsConfiguration("/**", config);
 		return source;

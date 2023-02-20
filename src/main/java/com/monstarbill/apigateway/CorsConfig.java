@@ -18,6 +18,7 @@
 //
 //	@Bean
 //	public CorsConfigurationSource corsConfigurationSource() {
+//		System.out.println("=========== API Gateway : CorsConfig : corsConfigurationSource ");
 //		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 //		CorsConfiguration config = new CorsConfiguration().applyPermitDefaultValues();
 ////		config.addAllowedMethod("*");

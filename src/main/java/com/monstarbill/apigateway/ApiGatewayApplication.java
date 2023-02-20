@@ -13,15 +13,15 @@ public class ApiGatewayApplication {
 		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
 	
-	@Bean
-	public WebFluxConfigurer corsMappingConfigurer() {
-	    return new WebFluxConfigurer() {
-	        @Override
-	        public void addCorsMappings(CorsRegistry registry) {
-	            registry.addMapping("/**")
-				.allowedOrigins("*").allowedHeaders("*").allowedMethods("*").maxAge(1800);
-	        }
-	    };
-	}
+//	@Bean
+//	public WebFluxConfigurer corsMappingConfigurer() {
+//	    return new WebFluxConfigurer() {
+//	        @Override
+//	        public void addCorsMappings(CorsRegistry registry) {
+//	            registry.addMapping("/**")
+//				.allowedOrigins("*").allowedHeaders("*").allowedMethods("*").maxAge(1800);
+//	        }
+//	    };
+//	}
 
 }

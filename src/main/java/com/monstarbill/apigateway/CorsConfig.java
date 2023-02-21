@@ -18,7 +18,7 @@ public class CorsConfig extends CorsConfiguration {
 	//	return new CorsWebFilter(corsConfigurationSource());
 		CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials( true );
-        config.setAllowedOrigins( List.of( "http://43.205.33.156:8080","http://43.205.33.156:8082","http://43.205.33.156:8081" ,"http://localhost:8080" ) );
+        config.setAllowedOrigins( List.of( "http://43.205.33.156:8080","http://43.205.33.156:8082","http://43.205.33.156:8081" ,"http://localhost:4200" ) );
         config.setAllowedMethods( List.of( "GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD" ) );
         config.setAllowedHeaders( List.of("*") );
 
